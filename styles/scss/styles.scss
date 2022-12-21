@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box;
+
+
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #eaeae8;
+    height: 100%;
+
+}
+
+.navbar.bg-light {
+    display: none;
+}
+
+.navbar.bg-light2 {
+    display: none;
+}
+
+.main--container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 81%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-grow: 1;
+
+}
+
+.nav__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 10px;
+
+    .logo {
+        border-radius: 50%;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+
+        li {
+            border: solid 0.3px black;
+            margin-left: 25px;
+            list-style: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #eae8e8;
+            border-radius: 5%;
+
+        }
+
+        li:hover {
+            display: inline-block;
+            background: none;
+            text-decoration: none;
+            transition: all .3s ease-in-out;
+        }
+
+        li a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+}
+
+
+.content {
+
+
+    color: #5e5d5d;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding: 40px 40px;
+
+
+
+
+}
+
+.wraper {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    flex-wrap: wrap;
+}
+
+.container {
+    display: inline-block;
+    margin: auto;
+    height: fit-content;
+
+    h3 {
+        font-size: 60px;
+
+        font-family: ivymode, serif;
+
+    }
+
+    h1 {
+        font-size: 40px;
+        font-family: ivymode, serif;
+    }
+
+    .btn {
+        margin-top: 20px;
+        background-color: #cdc9c9;
+        display: inline-block;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        transition: all .2s ease-in-out;
+
+    }
+}
+
+.carousel {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.carousel img {
+    height: 600px;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 81%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #cdc9c9;
+    padding: 10px;
+
+}
+
+.redes--sociais a {
+    padding: 20px;
+
+
+
+}
+
+.rodape--100 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #cdc9c9;
+    padding: 10px;
+
+}
+
+.item--menu--wraper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    grid-row-gap: 20px;
+    justify-items: center;
+    background-color: #f5edd9;
+
+
+    .item--menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #e9c296;
+        padding: 5px;
+        border-radius: 5%;
+
+        img {
+            border-radius: 10%;
+            padding: 5px;
+        }
+
+        h1 {
+            font-size: medium;
+        }
+    }
+
+
+}
+
+.container--cadastro {
+    width: 40%;
+    min-width: 300px;
+    padding: 30px;
+    border-radius: 2%;
+    background-color: #cdc9c9;
+
+
+}
+
+.container--background {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    background-image: url(/assets/background__pedido.jpg);
+    background-size: cover;
+
+}
+
+.container--cadastro1 {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    .footer {
+        align-self: end;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .nav__menu {
+        display: none;
+    }
+
+    .navbar.bg-light {
+        display: flex;
+        width: 81%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navbar.bg-light2 {
+        display: flex;
+    }
+
+    .carousel {
+        display: none;
+    }
+
+    .main--container {
+        height: 100vh;
+      
+        
+    }
+
+    .content {
+        h3 {
+            font-size: 40px;
+
+            font-family: ivymode, serif;
+
+        }
+
+        h1 {
+            font-size: 30px;
+            font-family: ivymode, serif;
+        }
+
+    }
+
+    .main--container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 81%;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+
+    }
+    .item--menu--wraper{
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    }
+
+}
